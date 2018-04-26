@@ -11,36 +11,78 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body>
-  <header class="main-header">
 
+
+
+<body class="page">
+  <header class="page__section page__section--theme--light [ main-header ]">    
+    <div class="main-header__menu">
+      <div class="container container--flex"> 
+        <a class="logo">
+          <img class="logo__image" src="img/techno-header-logo.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+        </a>
+        <form class="search" action="https://echo.htmlacademy.ru">
+          <label class="search__label">
+            <input class="search__input" type="text" placeholder="Поиск:">
+            
+            <button class="search__button" type="submit">Найти</button>
+          </label>
+        </form>
+        <ul class="user-menu">
+          <li class="user-menu__item"><a class="user-menu__link user-menu__link--bookmarks" href="#"><span class="user-menu__text">Закладки: 0</span></a></li><li class="user-menu__item"><a class="user-menu__link user-menu__link--cart" href="#"><span class="user-menu__text">Корзина: 0</span></a></li><li class="user-menu__item"><a class="user-menu__link user-menu__link--checkout" href="#">Оформить заказ</a></li>
+        </ul>      
+      </div>
+    </div>
+    <div class="main-header__main container container--flex">
+      <h1 class="visually-hidden">Строительный магазин "Техномарт"</h1>
+      <p class="description">
+        Интернет-магазин строительных материалов и инструментов для ремонта
+      </p>
+      <div class="info">
+        <a class="info__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="info__addr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
+      <ul class="login-menu">
+        <li class="login-menu__item"><a href="#" class="login-menu__link">Войти</a></li>
+        <li class="login-menu__item"><a href="#" class="login-menu__link">Регистрация</a></li>
+      </ul> 
+      <ul class="main-header__nav main-nav">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Компания</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Спецпредложение</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </div>
   </header>
   
-  <main>
-    <section class="promo">
-
+  <main class="page__section">
+    
+    <section class="page__section promo">      
     </section>
-    <section class="popular-goods">
-
+    
+    <section class="page__section popular-goods">      
     </section>
-    <section class="popular-manufacturers">
-
+    
+    <section class="page__section popular-manufacturers">      
     </section>
-    <section class="services">
-
+    
+    <section class="page__section page__section--theme--light [ services ]">      
     </section>
-    <section class="about-us">
-
+    
+    <section class="page__section about-us">      
     </section>
-    <section class="contacts">
-
+    
+    <section class="page__section contacts">      
     </section>
+    
   </main>
-
-  <footer class="main-footer">
-
+  
+  <footer class="page__section page__section--theme--dark main-footer">    
   </footer>
-
+  
 </body>
 
 </html>

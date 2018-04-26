@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "MyriadPro";
   font-weight: 400;
@@ -5,3 +13,211 @@
   src: url("../fonts/MyriadPro-Regular.eot");
   src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
 }
+
+.page {
+  margin: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #000;
+}
+
+.page__section {
+  display: block;
+}
+
+.page__section--theme--dark {
+  background-color: #32425c;
+}
+
+.page__section--theme--light {
+  background-color: #f2f6f8;
+}
+
+.page__section--theme--white {
+  background-color: #fff;
+}
+
+.page__section--theme--darkest {
+  background-color: #293449;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+  max-width: 100%;
+}
+
+.container--flex {
+  display: flex;
+}
+
+
+/******************* Header ******************/
+.main-header {
+  padding-bottom: 60px;
+}
+
+.main-header__menu {
+  background-color: #293449;
+  display: flex;
+  height: 42px;
+}
+
+.logo {
+  width: 220px;
+  height: 47px;
+  overflow: hidden;
+}
+
+.logo:hover {
+  filter: brightness(110%);
+}
+
+.logo:active {
+  filter: brightness(100%);
+}
+
+.logo__image {
+  width: 100%;
+  height: auto;
+}
+
+
+.search {
+  background-color: #293449;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search__label {
+  position: relative;
+  flex-grow: 1;
+}
+
+.search__input {
+  font: 17px/18px "Cuprum", "Arial", sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  padding: 13px 10px 12px 47px;
+}
+
+.search__input:focus {
+  outline: 0;
+  color: #000;
+  background: #fff;
+}
+
+.search__input:focus::placeholder {
+  color: #000;
+}
+
+.search__input:focus + .search__button::before {
+  opacity: 1;
+  /* Make not-inline svg icon red */
+  filter: brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%);
+}
+
+.search__input::placeholder {
+  color: #fff;
+}
+
+.search__button {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  padding: 12px 12px 12px 15px;
+}
+
+.search__button::before {
+  content: url("../img/icon-search.svg");
+  opacity: 0.3;
+}
+
+.search:hover .search__button::before{
+  opacity: 1;
+}
+
+
+.user-menu {
+  background-color: #293449;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.user-menu__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-menu__link {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 12.5px 0;
+  text-align: right;
+  text-align: center;
+  min-width: 150px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-menu__text {
+  margin-left: 16px;
+}
+
+.user-menu__link--checkout {
+  background-color: #63a63e;
+}
+
+.user-menu__link--checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.user-menu__link--checkout:active {
+  background-color: #518534;
+}
+
+.user-menu__link::before {
+  position: absolute;
+  display: inline;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.user-menu__link:hover::before {
+  opacity: 1;
+}
+
+.user-menu__link:active {
+  opacity: 0.5;
+}
+
+.user-menu__link--bookmarks::before {
+  content: url(../img/icon-bookmark.svg);
+}
+
+.user-menu__link--cart::before {
+  content: url(../img/icon-cart.svg);
+}
+
+
+
+
+
+
+
+
+
