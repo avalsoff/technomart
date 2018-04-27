@@ -50,8 +50,8 @@ input[type="radio"].visually-hidden {
   background-color: #f2f6f8;
 }
 
-.page__section--theme--white {
-  background-color: #fff;
+.page__section--theme--default {
+  background-color: #ffffff;
 }
 
 .page__section--theme--darkest {
@@ -393,6 +393,43 @@ input[type="radio"].visually-hidden {
   padding-right: 54px;
 }
 
+
+.main-content__promo {
+  padding-top: 59px;
+  padding-bottom: 53px;
+}
+
+.promo {
+  display: flex;
+  align-items: flex-start
+}
+
+.promo__items {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__item {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 20px;  
+  background-color: #ffc047;
+}
+
+.promo-card {
+  width: 300px;
+  height: 123px;
+  border: 1px solid transparent;
+}
+
+.promo-slider {
+  width: 620px;
+  height: 266px;
+  border: 1px solid transparent;
+}
 
 
 
