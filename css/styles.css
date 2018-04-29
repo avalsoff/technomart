@@ -56,6 +56,28 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
+.new {
+  position: relative;
+}
+
+.new::after {
+  position: absolute;
+  content: "new";
+  color: #fff;
+  background-color: #ee3643;
+  text-align: center;
+  line-height: 24px;
+  top: 6px;
+  right: -30px;
+  height: 27px;
+  width: 100px;
+  transform: rotate(45deg);
+  font-family: "PT Sans Narrow";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 .page {
   margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -92,6 +114,13 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.section-heading {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
 /******************* Header ******************/
 .main-header {
@@ -462,24 +491,6 @@ input[type="radio"].visually-hidden {
   padding-top: 21px;
 }
 
-.promo-card--new::after {
-  position: absolute;
-  content: "new";
-  color: #fff;
-  background-color: #ee3643;
-  text-align: center;
-  line-height: 24px;
-  top: 6px;
-  right: -30px;
-  height: 27px;
-  width: 100px;
-  transform: rotate(45deg);
-  font-family: "PT Sans Narrow";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
 .promo-card--color--orange {
   background-color: #ffc047;
 }
@@ -643,24 +654,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.product-card--new::after {
-  position: absolute;
-  content: "new";
-  color: #fff;
-  background-color: #ee3643;
-  text-align: center;
-  line-height: 24px;
-  top: 6px;
-  right: -30px;
-  height: 27px;
-  width: 100px;
-  transform: rotate(45deg);
-  font-family: "PT Sans Narrow";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
 .product-card__image-wrapper {
   width: 220px;
   height: 140px;
@@ -793,6 +786,10 @@ input[type="radio"].visually-hidden {
 }
 
 
+.main-content__popular-manufacturers {
+  padding-bottom: 65px;
+}
+
 .manufacturers__heading-panel {
   margin-bottom: 20px;
 }
@@ -835,3 +832,141 @@ input[type="radio"].visually-hidden {
   max-width: 220px;
   height: auto;
 }
+
+
+.main-content__services {
+  padding: 60px 0 101px 
+}
+
+.services__description {
+  max-width: 400px;
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services__tabs {
+  margin-top: 65px;
+}
+
+.vertical-tabs {
+  display: flex;
+}
+
+.vertical-tabs__buttons {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  list-style-type: none;
+}
+
+.vertical-tabs__buttons::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: url("../img/shadow-separator.png")
+}
+
+/* .vertical-tabs__item {
+  display: block;
+} */
+
+.vertical-tabs__button {
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  text-align: left;
+  font-family: "Cuprum";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #32425c;
+  border: none;
+  padding: 15px 0 15px 20px;
+}
+
+.vertical-tabs__button--active {
+  background-color: #fff;
+  color: #32425c;
+}
+
+.vertical-tabs__contents {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  list-style-type: none;
+  max-width: 600px;
+}
+
+.vertical-tabs__content {
+  position: relative;
+}
+
+.vertical-tabs__content::after {
+  position: absolute;
+  top: 20px;
+  right: -370px;
+  
+}
+
+.vertical-tabs__content--delivery::after {  
+  content: url("../img/delivery.png");
+}
+
+.vertical-tabs__content--guarantee::after {  
+  content: url("../img/guarantee.png");
+}
+
+.vertical-tabs__content--credit::after {
+  top: 0;
+  content: url("../img/credit.png");
+}
+
+
+.vertical-tabs__content-heading {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.vertical-tabs__content-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin-top: 34px;
+  max-width: 275px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.vertical-tabs__content--guarantee .vertical-tabs__content-description {
+  max-width: 379px;
+}
+
+.vertical-tabs__content--credit .vertical-tabs__content-description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.vertical-tabs__content-button {
+  width: 195px;
+}
+
+
+
+
+
+
+
+
+
+/* aksjdfkasdklfaklsdjfklajklsdjflkajslkdjfkljskldjfjalksjdflasjdlfalsd */
+
+.dn {
+  display: none;
+}
+
+/* aksjdfkasdklfaklsdjfklajklsdjflkajslkdjfkljskldjfjalksjdflasjdlfalsd */
