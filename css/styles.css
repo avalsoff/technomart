@@ -839,9 +839,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services__description {
-  max-width: 400px;
-  font-family: "PT Sans";
-  font-size: 13px;
+  max-width: 430px;
+  font-family: "MyriadPro", "Arial", sans-serif;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -934,10 +934,10 @@ input[type="radio"].visually-hidden {
 }
 
 .vertical-tabs__content-description {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "MyriadPro", "Arial", sans-serif;
   margin-top: 34px;
   max-width: 275px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -955,6 +955,94 @@ input[type="radio"].visually-hidden {
   width: 195px;
 }
 
+
+.main-content__about-us {
+  margin-top: 55px;
+  margin-bottom: 86px;  
+  width: 550px;
+}
+
+.about-us__description {
+  margin-top: 20px;
+  color: #000000;
+  font-family: "MyriadPro";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-us__companies {
+  list-style-type: none;
+  margin: 25px 0;
+}
+
+.about-us__companie {
+  position: relative;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.about-us__companie::before {
+  position: absolute;
+  left: -40px;
+  top: 8px;
+  content: "";
+  background-color: #ee3643;
+  width: 25px;
+  height: 2px;
+}
+
+.about-us__button {
+  width: 220px;
+  margin-top: 17px;
+}
+
+
+.main-content__contacts {
+  margin-left: auto;
+  width: 300px;
+  margin-top: 55px;
+  margin-bottom: 86px;
+}
+
+.contacts__description {
+  width: 190px;
+  margin-top: 20px;
+  color: #000000;
+  font-family: "MyriadPro";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.contacts__map {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 300px;
+  height: 158px;
+}
+
+.map__image-wrapper {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map__map-wrapper {
+  z-index: 1;
+}
+
+.contacts__button {
+  margin-top: 40px;
+  width: 300px;
+}
 
 
 
