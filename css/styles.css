@@ -1222,16 +1222,118 @@ input[type="radio"].visually-hidden {
 }
 
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.modal__close {
+  position: absolute;
+  cursor: pointer;
+  right: 2px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  font-size: 0;
+  border: 0;
+}
+
+.modal__close::before {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 2px;
+  width: 25px;
+  height: 4px;
+  transform: rotate(45deg);
+  background-color: #f2363d;
+}
+
+.modal__close::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 2px;
+  width: 25px;
+  height: 4px;
+  transform: rotate(-45deg);
+  background-color: #f2363d;
+}
 
 
+.write-us {
+  background-color: #ffffff;
+  border-top: 7px solid #ff4f4f;
+  width: 620px;
+  max-width: 100%;
+}
 
+.write-us__sign {
+  display: flex;
+  justify-content: space-between;  
+  margin: 55px 80px 0;
+}
 
+.write-us__label {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
 
+.write-us__input {
+  margin-top: 1px;
+  padding: 8px 10px 8px 16px;
+  border: 2px solid #dee3e4;
+  border-radius: 4px;
+  width: 220px;
+  max-width: 100%;  
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+}
 
+.write-us__input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+}
 
+.write-us__letter-label {
+  display: block;
+  margin-left: 80px;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
 
+.write-us__letter {
+  resize: none;
+  border: 2px solid #dee3e4;
+  border-radius: 4px;
+  width: 460px;
+  max-width: 100%;  
+  padding: 5px 10px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0 80px;
+  margin-bottom: 37px;
+}
 
+.write-us__submit-wrapper {
+  height: 112px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.write-us__submit {
+  margin: 0 80px;
+  width: 100%;
+}
 
 
 
