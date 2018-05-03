@@ -97,7 +97,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page__section--theme--default {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .page__section--theme--darkest {
@@ -649,6 +649,7 @@ input[type="radio"].visually-hidden {
   margin: 0 20px 20px 0;
   overflow: hidden;
   padding: 21px 0;
+  background-color: #fff;
   border: 1px solid #eaeaea;
 }
 
@@ -814,6 +815,7 @@ input[type="radio"].visually-hidden {
   width: 220px;
   height: 145px;
   border: 1px solid #eaeaea;
+  background-color: #fff;
   margin: 0 20px 20px 0;
 }
 
