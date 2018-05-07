@@ -94,30 +94,35 @@
           </li>
           
           <li class="promo__item">          
-            <div class="promo-slider">
-              <div class="promo-slider__caption">
-                <p class="promo-slider__main-caption">Дрели</p>
-                <p class="promo-slider__description">Соседям на радость!</p>
-              </div>
-              <!-- <ul class="promo-slider__images">
-                <li class="promo-slider__image-item">
-                  <img src="img/slider-1.jpg" alt="Фоновое изображение слайдера" class="promo-slider__img">
+            <div class="promo-slideshow">
+              <!-- hidden -->
+              <ul class="promo-slideshow__slides">
+                <li class="promo-slideshow__slide">                  
+                  <div class="promo-slideshow__caption">
+                    <p class="promo-slideshow__main-caption">Дрели</p>
+                    <p class="promo-slideshow__description">Соседям на радость!</p>
+                  </div>
+                  <img class="promo-slideshow__img" src="img/slider-1.jpg" alt="Фоновое изображение слайдера">
                 </li>
-                <li class="promo-slider__image-item">
-                  <img src="img/slider-2.jpg" alt="Фоновое изображение слайдера" class="promo-slider__img">
+                <li class="promo-slideshow__slide">                
+                  <div class="promo-slideshow__caption">
+                    <p class="promo-slideshow__main-caption">Перфораторы</p>
+                    <p class="promo-slideshow__description">Настоящие мужские игрушки</p>
+                  </div>
+                  <img src="img/slider-2.jpg" alt="Фоновое изображение слайдера" class="promo-slideshow__img">
                 </li>
-              </ul> -->
-              <a href="catalog.html" class="promo-slider__link button">Открыть каталог</a>
+              </ul>
+              <a href="catalog.html" class="promo-slideshow__link button">Открыть каталог</a>
               <!-- #TODO: Make this elements in js, add dots -->
-              <button class="promo-slider__nav-button promo-slider__nav-button--prev">Предыдущий слайд</button>
-              <button class="promo-slider__nav-button promo-slider__nav-button--next">Следующий слайд</button>
-              <ul class="promo-slider__dots">
-                <a href="#" class="slider-indicator"></a>
-                <li class="promo-slider__dot-item"><a href="#" class="promo-slider__dot" data-pos="1"></a></li>
-                <li class="promo-slider__dot-item"><a href="#" class="promo-slider__dot" data-pos="2"></a></li>
-                <li class="promo-slider__dot-item"><a href="#" class="promo-slider__dot" data-pos="3"></a></li>
-                <li class="promo-slider__dot-item"><a href="#" class="promo-slider__dot" data-pos="4"></a></li>
-                <li class="promo-slider__dot-item"><a href="#" class="promo-slider__dot" data-pos="5"></a></li>
+              <button class="promo-slideshow__nav-button promo-slideshow__nav-button--prev" onclick="plusSlides(-1)">Предыдущий слайд</button>
+              <button class="promo-slideshow__nav-button promo-slideshow__nav-button--next" onclick="plusSlides(1)">Следующий слайд</button>
+              <ul class="promo-slideshow__dots">
+                <li class="promo-slideshow__dot-item">
+                  <button class="promo-slideshow__dot promo-slideshow__dot--active" onclick="currentSlide(1)"></button>
+                </li>
+                <li class="promo-slideshow__dot-item">
+                  <button class="promo-slideshow__dot" onclick="currentSlide(2)"></button>
+                </li>
               </ul>
             </div>
           </li>
@@ -324,13 +329,13 @@
         <div class="services__tabs vertical-tabs">
           <ul class="vertical-tabs__buttons">
             <li class="vertical-tabs__item">
-              <button class="vertical-tabs__button vertical-tabs__button--active">Доставка</button>
+              <button class="vertical-tabs__button vertical-tabs__button--active" id="defaultOpen" onclick="openTab(event, 'delivery')">Доставка</button>
             </li>
             <li class="vertical-tabs__item">
-              <button class="vertical-tabs__button">Гарантия</button>
+              <button class="vertical-tabs__button" onclick="openTab(event, 'guarantee')">Гарантия</button>
             </li>
             <li class="vertical-tabs__item">
-              <button class="vertical-tabs__button">Кредит</button>
+              <button class="vertical-tabs__button" onclick="openTab(event, 'credit')">Кредит</button>
             </li>
           </ul>
           <ul class="vertical-tabs__contents">
@@ -477,7 +482,7 @@
         <button class="button write-us__submit" type="submit">Отправить</button>
       </div>
     </form>
-    <button class="close-btn">Закрыть</button>
+    <button class="close-btn js-write-us__close-btn">Закрыть</button>
   </section>
   
   
@@ -487,10 +492,11 @@
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa3d1e163e86c1de67b7e936b72a46a779e953db12b4d9442d9cfce7813c9e2ee&amp;width=940&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
       <img class="modal-map__fallback-img" src="img/big-map-fallback.jpg" alt="Наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </div>
-    <button class="close-btn modal-map__close-btn">Закрыть</button>
+    <button class="close-btn close-btn--outside js-modal-map__close-btn">Закрыть</button>
   </section>
   
   <script src="js/index.js"></script>
+  <script>indexPage()</script> 
 </body>
 
 </html>
