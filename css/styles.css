@@ -398,7 +398,7 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
 }
 
-.login-menu__item:last-child {
+.login-menu__item:last-child .product-card {
   margin-right: 0;
 }
 
@@ -1986,7 +1986,7 @@ input[type="range"].multirange.ghost {
   flex-wrap: wrap;
 }
 
-.catalog__item:nth-child(3n) {
+.catalog__item:nth-child(3n) .product-card {
   margin-right: 0;
 }
 
