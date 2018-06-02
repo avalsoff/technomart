@@ -75,6 +75,7 @@ input[type="radio"].visually-hidden {
 .button--catalog:hover {
   border: 1px solid #bdc6ca;  
   background: transparent;
+  color: #000;
 }
 
 .button--catalog:active {
